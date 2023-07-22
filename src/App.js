@@ -15,7 +15,7 @@ function App() {
           <Routes>
             <Route path="components/store" element={<Store />} />
             <Route path="components/market" element={<Market />} />
-            <Route path="" element={<Store />} />
+            
           </Routes>
         </div>
       </GameProvider>
