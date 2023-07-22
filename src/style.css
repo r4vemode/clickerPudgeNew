@@ -1,0 +1,289 @@
+html{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Leelawadee, cursive;
+}
+
+ul{
+  list-style: none;
+  display: flex;
+}
+
+.pudge{
+  all: unset;
+  height: 200px;
+  width: 200px;
+  display: flex;
+  text-align: center;
+
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  animation: clickEffect 0.5s linear;
+  transition: 0.2s;
+  
+}
+
+
+.pudge-clicked {
+  animation: clickEffect 0.1s linear;
+
+}
+
+
+@keyframes clickEffect {
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.menu__title{
+  text-align: center;
+  width: 100%;
+  margin-bottom: 100px;
+  font-family: 'Lumanosimo', cursive;
+  color: gray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.menu__titles{
+  text-align: center;
+  width: 100%;
+  font-size: 60px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+
+  font-family: 'Lumanosimo', cursive;
+
+}
+
+.container{
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+}
+
+.munu{
+  height: 460px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 300px;
+}
+
+.pgimg{
+  height: 200px;
+  width: 200px;
+}
+
+.store-container{
+  width: 100%;
+  height: 500px;
+}
+
+
+
+@media only screen and (max-width: 600px) {
+
+  .card-container{
+    height: 210px;
+    width: 2310px;
+  }
+}
+
+/* Стили для экранов шириной от 601px до 1024px (обычно подходит для планшетов) */
+@media only screen and (max-width: 600px) {
+  .store__list {
+    margin-top: 700px;
+    flex-direction: column;  /* Переключаемся на вертикальное расположение */
+    gap: 50px;  /* Уменьшаем расстояние между элементами для мобильных устройств */
+    height: auto;
+    align-items: center;
+  }
+}
+
+.card-container{
+  position: relative;
+  height: 310px;
+  width: 310px;
+  transition: 0.2s ease-in;
+  border: 1px solid transparent;
+  padding-bottom:  100px;
+
+  cursor: pointer;
+}
+
+.store__list{
+  padding: 0 0 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
+  align-items: center;
+  width: 100%;
+  height: 230px;
+}
+
+.store__list-container{
+  display: flex;
+  gap: 100px;
+}
+
+.arcana{
+
+  height: 310px;
+  width: 510px;
+  padding: 0 100px 0 0;
+
+}
+
+.hook{
+  height: 310px;
+  width: 310px;
+}
+
+.menu__title-min{
+  font-size: 14px;
+  text-align: center;
+  width: 100%;
+  font-weight: 400;
+  padding-bottom: 0;
+  margin-bottom: 0;
+
+  font-family: 'Lumanosimo', cursive;
+
+}
+
+.arcana-container{
+  height: 310px;
+  background-color: white;
+}
+
+.card-container .menu__title{
+  margin-bottom: 0;
+}
+
+.card-container:hover{
+  border: 1px solid gray;
+}
+
+.arcana-slot{
+  height: 310px;
+  width: 310px;
+  background-image: url("../public/img/arcana.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.store-img{
+  height: 60px;
+  width: 60px;
+}
+
+.bottle-slot{
+  background-image: url("../public/img/bottle.png");
+  height: 310px;
+  width: 310px;
+  background-position: center;
+  background-size: cover;
+}
+
+.creep-slot{
+  height: 310px;
+  width: 310px;
+  background-image: url("../public/img/creep.png");
+  background-position: center;
+  background-size: cover;
+}
+
+
+.menu-btn__container{
+
+  margin-bottom: 40px;
+  display: flex;
+  gap: 20px;
+}
+
+@media only screen and (max-width: 600px) {
+  h1, p, h2, h3{
+    font-family: Inter,sans-serif;
+
+  }
+
+  .menu-btn__container{
+    flex-direction: column;
+  }
+  .store__list-container{
+    flex-direction: column;
+  }
+  .munu{
+    margin-bottom: 0;
+  }
+  .market__list{
+    height: auto;
+    flex-direction: column;
+    margin-top: 700px;
+  }
+}
+
+.mask-slot{
+  background-image: url("../public/img/mask.jpg");
+  height: 310px;
+  width: 310px;
+  background-position: center;
+  background-size: cover;
+}
+
+.open-btn{
+  padding: 10px 25px;
+  background-color: transparent;
+  border: 1px solid #121212;
+  border-radius: 5px;
+  font-size: 15px;
+  font-family: 'Lumanosimo', cursive ;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.open-btn:hover{
+  background-color: black;
+  color: white;
+}
+
+.market__list{
+  padding: 0 0 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
+  align-items: center;
+  width: 100%;
+  height: 230px;
+}
+
+@media only screen and (max-width: 600px) {
+  .market__list{
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.creep-saller-slot{
+  background-image: url("../public/img/saller.png");
+  height: 310px;
+  width: 310px;
+  background-position: center;
+  background-size: cover;
+}
+
+/*
+ку
+ */
