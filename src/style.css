@@ -271,10 +271,10 @@ ul{
   border: 1px solid #121212;
   border-radius: 5px;
   font-size: 15px;
-  font-family: 'Lumanosimo', cursive ;
   cursor: pointer;
   font-weight: 500;
   transition: 0.2s;
+  color: black;
 }
 
 .open-btn:hover{
