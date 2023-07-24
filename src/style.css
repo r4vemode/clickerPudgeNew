@@ -1,8 +1,17 @@
-html{
+html {
   box-sizing: border-box;
+  font-family: Inter-Regular, sans-serif;
+}
+
+
+
+* {
   margin: 0;
   padding: 0;
-  font-family: Leelawadee, cursive;
+}
+
+body{
+  font-family: 'Poppins', sans-serif;
 }
 
 ul{
@@ -47,7 +56,6 @@ ul{
   text-align: center;
   width: 100%;
   margin-bottom: 100px;
-  font-family: 'Lumanosimo', cursive;
   color: gray;
   display: flex;
   align-items: center;
@@ -62,7 +70,7 @@ ul{
   padding-bottom: 0;
   margin-bottom: 0;
 
-  font-family: 'Lumanosimo', cursive;
+
 
 }
 
@@ -151,15 +159,14 @@ ul{
 }
 
 .menu__title-min{
-  font-size: 14px;
+  font-size: 18px;
   text-align: center;
   width: 100%;
   font-weight: 400;
   padding-bottom: 0;
   margin-bottom: 0;
 
-  font-family: 'Lumanosimo', cursive;
-
+  font-style: italic;
 }
 
 .arcana-container{
@@ -179,6 +186,22 @@ ul{
   height: 310px;
   width: 310px;
   background-image: url("../public/img/arcana.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.tower-slot{
+  height: 310px;
+  width: 310px;
+  background-image: url("../public/img/Tower_Radiant_model.webp");
+  background-position: center;
+  background-size: cover;
+}
+
+.roshan-slot{
+  height: 310px;
+  width: 310px;
+  background-image: url("../public/img/Roshan_model.webp");
   background-position: center;
   background-size: cover;
 }
@@ -284,6 +307,82 @@ ul{
   background-size: cover;
 }
 
-/*
-ку
- */
+.ach-title{
+  text-align: center;
+  margin: 0;
+  font-family: Inter, sans-serif;
+  font-size: 35px;
+}
+
+.ach-container{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 8px;
+  height: 330px;
+  width: 350px;
+  background-color: white;
+  border: 1px solid lightgray;
+  box-shadow: 1px 4px 10px 2px rgba(0, 0, 0, 0.25);
+  overflow: hidden;
+  transition: 0.2s;
+}
+
+.ach-container:hover{
+  transform: scale(1.02);
+  box-shadow: 1px 6px 15px 2px rgba(0, 0, 0, 0.25);
+}
+
+.ach-text{
+  color: black;
+  text-align: center;
+  font-family: Inter, sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.ach-text-container{
+  padding: 10px 30px;
+}
+
+.ach-main__container{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  background-color: transparent;
+
+}
+
+.star-img{
+  height: 40px;
+  width: 40px;
+}
+
+.ach-title-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+  background-color: transparent;
+
+
+}
