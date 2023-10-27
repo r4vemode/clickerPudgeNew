@@ -1,9 +1,11 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 import '../registrationPage/registration.css'
+import Header from "../../components/Header";
 const Authorization = () => {
   return (
     <>
+      <Header/>
       <div className="registration__box">
         <div className={'registration__container'}>
           <img className={'registration__img'} src="/img/pudge.png" alt=""/>
