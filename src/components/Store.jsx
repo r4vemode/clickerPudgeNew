@@ -2,6 +2,7 @@ import React, {useEffect} from 'react';
 import { useGameContext } from '../GameContext';
 import './Menu';
 import ShopItems from '../UI/ShopItem';
+import Footer from "./Footer";
 
 const Store = () => {
   const {
@@ -10,7 +11,7 @@ const Store = () => {
     scorePerClick,
     setScorePerClick,
     scorePerSecond,
-    setScorePerSecond
+    setScorePerSecond,
   } = useGameContext();
 
   return (
@@ -25,6 +26,7 @@ const Store = () => {
           setScorePerSecond={setScorePerSecond}
         />
       </div>
+      <Footer />
     </div>
   );
 };

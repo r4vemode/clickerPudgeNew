@@ -1,0 +1,27 @@
+.AchivInfo-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.AchivInfo-list{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.AchivInfo__title{
+    margin-bottom: 40px;
+}
+
+.AchivInfo__text{
+    text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+    .AchivInfo__title{
+        font-size: 20px;
+        text-align: center;
+    }
+}

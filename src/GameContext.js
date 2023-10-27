@@ -7,18 +7,28 @@ export const GameProvider = ({ children }) => {
   const [scorePerClick, setScorePerClick] = useState(1);
   const [scorePerSecond, setScorePerSecond] = useState(0);
   const [showModal, setShowModal] = useState(false);
-  const [showAchievement1, setShowAchievement1] = useState(false);
-  const [showAchievement2, setShowAchievement2] = useState(false);
-  const [showAchievement3, setShowAchievement3] = useState(false);
-  const [showAchievement4, setShowAchievement4] = useState(false);
-  const [showAchievement5, setShowAchievement5] = useState(false);
-  const [showModalAchievement1, setShowModalAchievement1] = useState(false);
-  const [showModalAchievement2, setShowModalAchievement2] = useState(false);
-  const [showModalAchievement3, setShowModalAchievement3] = useState(false);
-  const [showModalAchievement4, setShowModalAchievement4] = useState(false);
-  const [showModalAchievement5, setShowModalAchievement5] = useState(false);
-
-
+  const [creepPrice, setCreepPrice] = useState(200);
+  const [sallerPrice, setSallerPrice] = useState(700);
+  const [towerPrice, setTowerPrice] = useState(3000);
+  const [gadzaPrice, setGadzaPrice] = useState(100000);
+  const [arcanaPrice, setArcanaPrice] = useState(20000);
+  const [bottlePrice, setBottlePrice] = useState(20);
+  const [maskPrice, setMaskPrice] = useState(100);
+  const [hookPrice, setHookPrice] = useState(10000);
+  const [name, setName] = useState('');
+  const [savedName, setSavedName] = useState('');
+  const [inputVisible, setInputVisible] = useState(true);
+  const [profileImage, setProfileImage] = useState("/img/pudge.png");
+  const [experience, setExperience] = useState(0);
+  const [maxExperience, setMaxExperience] = useState(100);
+  const [level, setLevel] = useState(0);
+  const [creeps, setCreeps] = useState(0);
+  const [sallerCreeps, setSallerCreeps] = useState(0);
+  const [towers, setTowers] = useState(0);
+  const [gadzas, setGadzas] = useState(0);
+  const [totalClicks, setTotalClicks] = useState(0);
+  const [isModalOpen, setModalOpen] = useState(false); // состояние для модального окна
+  const [isAchievementUnlocked, setAchievementUnlocked] = useState(false);
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -27,9 +37,12 @@ export const GameProvider = ({ children }) => {
     return () => clearInterval(interval);
   }, [scorePerSecond]);
 
+  const[userName, setUserName] = useState('Ваше имя')
 
   return (
     <GameContext.Provider value={{
+      userName,
+      setUserName,
       score,
       setScore,
       scorePerClick,
@@ -38,26 +51,50 @@ export const GameProvider = ({ children }) => {
       setScorePerSecond,
       setShowModal,
       showModal,
-      showAchievement1,
-      showAchievement2,
-      showAchievement3,
-      showAchievement4,
-      showAchievement5,
-      setShowAchievement1,
-      setShowAchievement2,
-      setShowAchievement3,
-      setShowAchievement4,
-      setShowAchievement5,
-      showModalAchievement1,
-      showModalAchievement2,
-      showModalAchievement3,
-      showModalAchievement4,
-      showModalAchievement5,
-      setShowModalAchievement1,
-      setShowModalAchievement2,
-      setShowModalAchievement3,
-      setShowModalAchievement4,
-      setShowModalAchievement5
+      creepPrice,
+      towerPrice,
+      sallerPrice,
+      gadzaPrice,
+      arcanaPrice,
+      bottlePrice,
+      maskPrice,
+      hookPrice,
+      setCreepPrice,
+      setSallerPrice,
+      setTowerPrice,
+      setGadzaPrice,
+      setArcanaPrice,
+      setBottlePrice,
+      setMaskPrice,
+      setHookPrice,
+      name,
+      setName,
+      savedName,
+      setSavedName,
+      inputVisible,
+      setInputVisible,
+      profileImage,
+      setProfileImage,
+      experience,
+      setExperience,
+      maxExperience,
+      setMaxExperience,
+      level,
+      setLevel,
+      creeps,
+      setCreeps,
+      sallerCreeps,
+      setSallerCreeps,
+      towers,
+      setTowers,
+      gadzas,
+      setGadzas,
+      totalClicks,
+      setTotalClicks,
+      isModalOpen,
+      setModalOpen,
+      isAchievementUnlocked,
+      setAchievementUnlocked
     }}>
       {children}
     </GameContext.Provider>

@@ -53,9 +53,10 @@ ul{
 }
 
 .menu__title{
+  margin-top: 60px;
   text-align: center;
   width: 100%;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
   color: gray;
   display: flex;
   align-items: center;
@@ -98,6 +99,13 @@ ul{
   height: 500px;
 }
 
+.card-container{
+  padding: 20px 0;
+}
+
+.card-container .menu__title{
+  margin-top: 20px;
+}
 
 
 @media only screen and (max-width: 600px) {
@@ -207,8 +215,8 @@ ul{
 }
 
 .store-img{
-  height: 60px;
-  width: 60px;
+  height: 40px;
+  width: 40px;
 }
 
 .bottle-slot{
@@ -292,12 +300,7 @@ ul{
   height: 230px;
 }
 
-@media only screen and (max-width: 600px) {
-  .market__list{
-    flex-direction: column;
-    gap: 20px;
-  }
-}
+
 
 .creep-saller-slot{
   background-image: url("../public/img/saller.png");
@@ -383,6 +386,49 @@ ul{
 
 .modal-content {
   background-color: transparent;
+}
+
+.footer__container{
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 600px;
+}
+
+.footer__text{
+  text-align: center;
+}
+
+
+.footer__box{
+  margin-top: 750px;
+}
+
+@media only screen and (max-width: 600px) {
+  .menu__title{
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+
+  .store__list{
+    margin-top: 150px;
+  }
+
+  .market__list{
+    margin-top: 200px;
+    margin-bottom: 100px;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer__container{
+    margin-top: 1600px;
+  }
+
+  .market__container{
+    gap: 0;
+  }
 
 
 }
