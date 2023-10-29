@@ -9,7 +9,7 @@ const Header = () => {
   const toggleMenu = () => {
     setMenuVisible(!menuVisible);
   };
-  
+
   return (
     <div className={'header__navigation'}>
       <nav className="header__nav">

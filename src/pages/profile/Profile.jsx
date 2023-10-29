@@ -19,8 +19,7 @@ const Profile = () => {
     setProfileImage,
     experience,
     maxExperience,
-    level,
-
+    level
   } = useGameContext();
 
   const [menuVisible, setMenuVisible] = useState(false);
@@ -58,6 +57,9 @@ const Profile = () => {
     width: `${(experience / maxExperience) * 100}%`,
   }
 
+  const handleNameChange = (e) => {
+    setName(e.target.value);
+  };
 
   return (
     <>
@@ -104,7 +106,7 @@ const Profile = () => {
                     className="username-input"
                     placeholder={'Enter your name'}
                     value={name}
-                    onChange={handleChange}
+                    onChange={handleNameChange}
                     onKeyDown={handleKeyDown}
                   />
                 )}

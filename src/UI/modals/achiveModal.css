@@ -1,6 +1,7 @@
 .achiv__modal-img{
-    width: 400px;
-    height: 400px;
+    width: 360px;
+    height: 100%;
+    object-fit: cover;
 }
 
 .achiv__modal-container{
@@ -24,7 +25,7 @@
     padding: 0 20px;
 }
 
-.achiv__modal-item{
+.achiv__modal-item-text{
     width: 400px;
     display: flex;
     align-items: center;
@@ -38,10 +39,7 @@
 
 @media (max-width: 600px){
     .achiv__modal-img{
-        width: 250px;
-        height: 200px;
-        border-top-right-radius: 15px;
-        border-top-left-radius: 15px;
+        width: 251px;
     }
     .achiv__modal-list{
         display: flex;
@@ -50,6 +48,7 @@
     }
     .achiv__modal-container{
         max-width: 250px;
+
     }
     .achiv__modal-text{
         font-size: 12px;
@@ -60,7 +59,11 @@
         font-size: 15px;
         margin: 5px 0;
     }
-    .achiv__modal-item{
+    .achiv__modal-item-text{
         width: 249px;
+    }
+    .achiv__modal-box{
+        border-top-right-radius: 28px;
+        border-top-left-radius: 28px;
     }
 }

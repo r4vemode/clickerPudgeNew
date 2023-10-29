@@ -42,14 +42,13 @@ a{
 
 .profile__achieve{
     width: 202px;
-    height: 154px;
     border-radius: 5px;
 }
 
 .user__achievements-list{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    gap: 20px;
 }
 
 .user__achievements{
@@ -189,7 +188,6 @@ a{
         margin-top: 30px;
         font-size: 28px;
     }
-
 }
 
 

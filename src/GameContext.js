@@ -3,7 +3,7 @@ import React, {createContext, useContext, useEffect, useState} from 'react';
 const GameContext = createContext();
 
 export const GameProvider = ({ children }) => {
-  const [score, setScore] = useState(0);
+  const [score, setScore] = useState(212120);
   const [scorePerClick, setScorePerClick] = useState(1);
   const [scorePerSecond, setScorePerSecond] = useState(0);
   const [showModal, setShowModal] = useState(false);
@@ -30,6 +30,7 @@ export const GameProvider = ({ children }) => {
   const [isModalOpen, setModalOpen] = useState(false); // состояние для модального окна
   const [isAchievementUnlocked, setAchievementUnlocked] = useState(false);
 
+
   useEffect(() => {
     const interval = setInterval(() => {
       setScore((prevScore) => prevScore + scorePerSecond);
@@ -37,7 +38,7 @@ export const GameProvider = ({ children }) => {
     return () => clearInterval(interval);
   }, [scorePerSecond]);
 
-  const[userName, setUserName] = useState('Ваше имя')
+  const[userName, setUserName] = useState('')
 
   return (
     <GameContext.Provider value={{

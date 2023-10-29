@@ -16,8 +16,10 @@
 }
 
 .profile__achieve{
+    object-fit: cover;
     cursor: pointer;
     transition: 0.2s;
+    height: 100%;
 }
 
 .profile__achieve:hover{
@@ -27,5 +29,8 @@
 @media only screen and (max-width: 600px) {
     .profile__achieve:hover{
         transform: none;
+    }
+    .profile__achieve{
+        width: 251px;
     }
 }
