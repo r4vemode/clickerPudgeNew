@@ -3,7 +3,7 @@ import React, {createContext, useContext, useEffect, useState} from 'react';
 const GameContext = createContext();
 
 export const GameProvider = ({ children }) => {
-  const [score, setScore] = useState(212120);
+  const [score, setScore] = useState(0);
   const [scorePerClick, setScorePerClick] = useState(1);
   const [scorePerSecond, setScorePerSecond] = useState(0);
   const [showModal, setShowModal] = useState(false);
