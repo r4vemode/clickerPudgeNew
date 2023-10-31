@@ -26,7 +26,6 @@ const Store = () => {
           setScorePerSecond={setScorePerSecond}
         />
       </div>
-      <Footer />
     </div>
   );
 };

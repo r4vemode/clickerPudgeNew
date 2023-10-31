@@ -235,9 +235,6 @@ ul {
 }
 
 @media only screen and (max-width: 600px) {
-    h1, p, h2, h3 {
-
-    }
 
     .menu-btn__container {
         flex-direction: column;
@@ -387,13 +384,29 @@ ul {
     margin-top: 600px;
 }
 
+.midas-slot{
+    height: 310px;
+    width: 310px;
+    background-image: url("../../public/img/midas.avif");
+    background-position: center;
+    background-size: cover;
+  }
+  
+  .rapier-slot{
+    height: 310px;
+    width: 310px;
+    background-image: url("../../public/img/rapier.png");
+    background-position: center;
+    background-size: cover;
+  }
+
 .footer__text {
     text-align: center;
 }
 
 
 .footer__box {
-    margin-top: 750px;
+    margin-top: 150px;
 }
 
 @media only screen and (max-width: 600px) {

@@ -109,19 +109,14 @@ ul{
 
 
 @media only screen and (max-width: 600px) {
-
   .card-container{
     height: 210px;
     width: 2310px;
   }
-}
-
-/* Стили для экранов шириной от 601px до 1024px (обычно подходит для планшетов) */
-@media only screen and (max-width: 600px) {
   .store__list {
     margin-top: 700px;
-    flex-direction: column;  /* Переключаемся на вертикальное расположение */
-    gap: 50px;  /* Уменьшаем расстояние между элементами для мобильных устройств */
+    flex-direction: column;  
+    gap: 50px; 
     height: auto;
     align-items: center;
   }
@@ -235,9 +230,23 @@ ul{
   background-size: cover;
 }
 
+.midas-slot{
+  height: 310px;
+  width: 310px;
+  background-image: url("../public/img/pudge.png");
+  background-position: center;
+  background-size: cover;
+}
+
+.rapier-slot{
+  height: 310px;
+  width: 310px;
+  background-image: url("../public/img/rapier.png");
+  background-position: center;
+  background-size: cover;
+}
 
 .menu-btn__container{
-
   margin-bottom: 40px;
   display: flex;
   gap: 20px;
@@ -299,8 +308,6 @@ ul{
   width: 100%;
   height: 230px;
 }
-
-
 
 .creep-saller-slot{
   background-image: url("../public/img/saller.png");

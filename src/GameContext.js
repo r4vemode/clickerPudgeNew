@@ -11,10 +11,12 @@ export const GameProvider = ({ children }) => {
   const [sallerPrice, setSallerPrice] = useState(700);
   const [towerPrice, setTowerPrice] = useState(3000);
   const [gadzaPrice, setGadzaPrice] = useState(100000);
-  const [arcanaPrice, setArcanaPrice] = useState(20000);
+  const [arcanaPrice, setArcanaPrice] = useState(100000);
   const [bottlePrice, setBottlePrice] = useState(20);
   const [maskPrice, setMaskPrice] = useState(100);
-  const [hookPrice, setHookPrice] = useState(10000);
+  const [hookPrice, setHookPrice] = useState(25000);
+  const [midasPrice, setMidasPrice] = useState(10000);
+  const [rapierPrice, setRapierPrice] = useState(50000);
   const [name, setName] = useState('');
   const [savedName, setSavedName] = useState('');
   const [inputVisible, setInputVisible] = useState(true);
@@ -95,7 +97,11 @@ export const GameProvider = ({ children }) => {
       isModalOpen,
       setModalOpen,
       isAchievementUnlocked,
-      setAchievementUnlocked
+      setAchievementUnlocked,
+      midasPrice,
+      setMidasPrice,
+      rapierPrice,
+      setRapierPrice
     }}>
       {children}
     </GameContext.Provider>
